@@ -1,0 +1,256 @@
+body{
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    
+    
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background: #000;
+    color: #fff;
+    min-height: 160vh;
+    top: 0; bottom: 0;
+    width: 30%;
+    align-items: center;
+    padding: 3rem;
+   
+}
+
+.image-container{
+    
+    height: 40%;
+
+    transition: 0.3s ease-in-out;
+}
+.image-container:hover{
+    border-radius: 50%;
+}
+
+.me{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+.me:hover{
+    border-radius: 50%;
+}
+
+.right{
+    width: 65%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    padding:  2rem;
+    box-sizing: border-box;
+}
+.info{
+    width: 65%;
+    text-align: left;
+}
+.info ul{
+    list-style: none;
+}
+.info li{
+    margin-bottom: 1rem;
+}
+.info a {
+    text-decoration: none;
+    color: #fff;
+}
+i{
+    margin-right: 1rem;
+}
+.sub-heading{
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+}
+h2{
+    font-size: 3rem;
+    letter-spacing: 20px;
+}
+h3{
+    font-size: 2rem;
+}
+.header{
+    margin: auto;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    background: #000;
+    padding: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h4{
+    font-size: 1.5rem;
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+p, span, a, li{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.sub-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto Mono', monospace;
+ 
+}
+.sub-head p, span{
+    font-weight: bold;
+    line-height: 5px;
+    font-size: 1.5rem;
+}
+
+.experience{
+    margin-bottom: 4rem;
+}
+
+.experience p{
+    margin-top: 0;
+}
+
+.open{
+    color: red;
+    position: absolute;
+    top: 10%;
+}
+
+.footer{display: none;}
+
+.links li:hover {
+    transform: scale(1.1);
+}
+
+.hide{
+    display: none;
+}
+
+.mentions-image{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mentions-img{
+    width: 25%;
+    
+}
+.mentions-img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    .hide{
+        display: block;
+    }
+    .left{
+        display: none;
+
+    }
+    .right{
+        width: 100%;
+        padding: 0;
+    }
+    .header{
+        width: 110%;
+        
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: max-content;
+        justify-content: space-between;
+    }
+    .sub-head p, span{
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .sub-head{
+        margin-bottom: 1rem;
+        flex-direction: column;
+    }
+    p, a, li{
+        font-size: 1.3rem;
+    }
+    h4{
+        width: 100%;
+    }
+    .summary{
+        padding: 1rem;
+    }
+
+    .footer{
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #000;
+        color: #fff;
+        padding: 2rem;
+    }
+    .footer ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .footer i{
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+    .footer li{
+        margin-right: 1rem;
+    }
+    .mentions-image{
+        flex-direction: column ;
+        
+    }
+    .mentions-img{
+        width: 60%;
+        margin-bottom: 2rem;
+       
+        
+    }
+    
+}
