@@ -6,6 +6,7 @@ body{
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    height: 100vh;
     
     
 }
@@ -26,9 +27,7 @@ body{
 }
 
 .image-container{
-    
     height: 40%;
-
     transition: 0.3s ease-in-out;
 }
 .image-container:hover{
@@ -81,12 +80,14 @@ h2{
     font-size: 3rem;
     letter-spacing: 20px;
 }
-h3{
+span{
     font-size: 2rem;
+    
 }
 .header{
     margin: auto;
     width: 80%;
+    height: 25vh;
     color: #fff;
     text-align: center;
     background: #000;
@@ -169,6 +170,27 @@ p, span, a, li{
     width: 100%;
 }
 
+.typing{
+    color: white;
+}
+.typing::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1.4rem;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 
 
@@ -189,6 +211,8 @@ p, span, a, li{
     }
     .header{
         width: 110%;
+        height: 30vh;
+        
         
     }
     .skills{
@@ -261,4 +285,13 @@ p, span, a, li{
         padding: 2rem;
     }
     
+}
+
+
+
+@media screen and (max-width:750px){
+    .header{
+        height: 50vh;
+    }
+
 }
